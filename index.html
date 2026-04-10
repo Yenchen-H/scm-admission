@@ -771,6 +771,10 @@
 </div>
 </div>
 <div class="sa-notice">大陸地區學生須符合「大陸地區學歷採認辦法」相關規定，港澳生另有相關規定，請詳閱當年度招生簡章。</div>
+<div class="sa-brochure">
+  <span class="sa-brochure-label">🌐 招生資訊：</span>
+  <a class="sa-dl-btn" href="https://oia.nkust.edu.tw/unit-11-268-6.html" target="_blank">📋 高科大國際處 境外學生招生</a>
+</div>
 </div>
 </div>
 </div>
@@ -967,9 +971,9 @@
 
   const scrollBtn = document.getElementById('saScrollTop');
   if (scrollBtn) {
-    const toggleScrollBtn = () => scrollBtn.classList.toggle('show', window.scrollY > 240);
-    window.addEventListener('scroll', toggleScrollBtn, { passive: true });
-    toggleScrollBtn();
+    window.addEventListener('scroll', function() {
+      scrollBtn.classList.toggle('show', window.scrollY > 300);
+    });
   }
 })();
 </script>
